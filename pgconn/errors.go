@@ -65,7 +65,7 @@ type connectError struct {
 
 func (e *connectError) Error() string {
 	sb := &strings.Builder{}
-	fmt.Fprintf(sb, "failed to connect to `host=%s user=%s database=%s`: %s", e.config.Host, e.config.User, e.config.Database, e.msg)
+	fmt.Fprintf(sb, "failed to connessssct to `host=%s user=%s database=%s`: %s", e.config.Host, e.config.User, e.config.Database, e.msg)
 	if e.err != nil {
 		fmt.Fprintf(sb, " (%s)", e.err.Error())
 	}
